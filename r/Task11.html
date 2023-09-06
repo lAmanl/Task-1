@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 3px solid white;
+        }
+        button{
+            background-color: #0db879;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            width: 100%;
+        }
+        button:hover{
+            opacity: 0.6;
+        }
+        span{
+            float: right;
+        }
+        .cnl{
+            background-color: red;
+            width: 100px;
+        }
+        .image{
+            text-align: center;
+            margin: 30px 0 15px;
+        }
+        .main{
+            padding: 60px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="image"><img src="../images/Screenshot 2023-09-06 002158.png"></div>
+        <div class="main">
+            <label><b>Username</b></label><br>
+            <input type="text"><br>
+            <label><b>Password</b></label><br>
+            <input type="text"><br>
+            <button type="submit">Login</button><br>
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+        </div>
+        <div class="main">
+            <button type="button" class="cnl">Cancel</button>
+            <span><a href="#">Forgot password?</a></span>
+        </div>            
+    </form>
+</body>
+</html>

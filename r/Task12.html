@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 775px;
+            background-color: rgb(170, 12, 78);
+        }
+        div h1{
+            color: white;
+            margin: 20px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            width: 650px;
+            height: 500px;
+            color: white;
+            font-size: 20px;
+            background-color: rgb(113, 5, 44);
+            padding: 20px;
+        }
+        form input, form select, form textarea{
+            padding: 5px;
+            margin-top: 10px;
+        }
+        form .submit{
+            width: 100%;
+            padding: 10px;
+            font-size: 25px;
+            color: rgb(63, 60, 60);
+            background-color: white;
+            border-radius: 5px;
+        }
+        form .submit:hover{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td>
+                            <input type="text" placeholder="your name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td>
+                            <input type="text" placeholder="your email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone Number</label></td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" name="gender"/>Male
+                            <input type="radio" name="gender"/>Female
+                            <input type="radio" name="gender"/>Other
+                                                    </td>
+                    </tr>
+                    <tr>
+                        <td><label>Language known</label></td>
+                        <td>
+                            <select>
+                                <option type="checkbox"/>Select language
+                                <option type="checkbox"/>English
+                                <option type="checkbox"/>Kannada
+                                <option type="checkbox"/>Hindi
+                                <option type="checkbox"/>Telugu
+                            </select>
+                        </td>
+                    </tr>
+                        <td><label>Zip Code</label></td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>About</label></td>
+                        <td>
+                            <textarea placeholder="Write about yourself"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" class="submit" value="Register"></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </div>
+</body>
+</html>
