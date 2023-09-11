@@ -14,13 +14,14 @@
             padding: 14px 20px;
             margin: 8px 0;
             border: none;
-            width: 100%;
+            width: 108%;
         }
         button:hover{
             opacity: 0.6;
         }
         span{
             float: right;
+            padding-top: 20px;
         }
         .cnl{
             background-color: red;
@@ -31,32 +32,44 @@
             margin: 30px 0 15px;
         }
         .main{
-            padding: 60px;
+            padding: 30px;
         }
         input[type=text], input[type=password] {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
         }
+        .out{
+            left: 500px;
+            margin-left: 450px;
+            width: 40%;
+            height: 50%;
+        }
+        p{
+            display: contents;
+        }
     </style>
 </head>
 <body>
-    <form>
-        <div class="image"><img src="../images/Screenshot 2023-09-06 002158.png"></div>
-        <div class="main">
-            <label><b>Username</b></label><br>
-            <input type="text"><br>
-            <label><b>Password</b></label><br>
-            <input type="text"><br>
-            <button type="submit">Login</button><br>
-            <label>
-                <input type="checkbox"> Remember me
-            </label>
+        <div class="out">
+            <form>
+                <div class="image"><img src="../images/Screenshot 2023-09-06 002158.png" alt="pfp"></div>
+                <div class="main">
+                    <label><b>Username</b></label><br>
+                    <input type="text"><br>
+                    <label><b>Password</b></label><br>
+                    <input type="text"><br>
+                    <button type="submit">Login</button><br>
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <div class="main">
+                    <p align="left"><button type="button" class="cnl">Cancel</button></p>
+                    
+                    <span align="right"><a href="#">Forgot password?</a></span>
+                </div>            
+            </form>
         </div>
-        <div class="main">
-            <button type="button" class="cnl">Cancel</button>
-            <span><a href="#">Forgot password?</a></span>
-        </div>            
-    </form>
 </body>
 </html>
